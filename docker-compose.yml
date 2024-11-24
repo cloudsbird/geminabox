@@ -1,0 +1,10 @@
+services:
+  geminabox:
+    build: .
+    image: cloudsbird/geminabox:latest
+    ports:
+      - "8080:9292"
+    environment:
+      BASIC_USER: username
+      BASIC_PASS: password
+    restart: always
